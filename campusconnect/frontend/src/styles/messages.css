@@ -1,0 +1,10 @@
+.chatlist { display: flex; flex-direction: column; }
+.chatrow { display: flex; align-items: center; gap: 12px; padding: 11px 16px; width: 100%; text-align: left; }
+.chatrow:active { background: var(--surface-2); }
+.ai-avatar { flex: none; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; color: #fff; background: linear-gradient(140deg, #6c61ff, #3a2fd1); }
+.ai-avatar.lg { width: 64px; height: 64px; }
+.ai-avatar svg { width: 20px; height: 20px; }
+.ai-avatar.lg svg { width: 30px; height: 30px; }
+.group-avatar { flex: none; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; color: var(--primary-text); background: var(--primary-soft); }
+.group-avatar svg { width: 19px; height: 19px; }
+.unread-dot { flex: none; min-width: 20px; height: 20px; padding: 0 5px; border-radius: 10px; background: var(--primary); color: #fff; font-size: 11px; font-weight: 800; display: grid; place-items: center; }

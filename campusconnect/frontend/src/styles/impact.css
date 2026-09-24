@@ -1,0 +1,17 @@
+.impact-hero { padding: 20px; border-radius: 24px; color: #fff; background: linear-gradient(150deg, #3a2fd1, #6b4ff0); box-shadow: var(--shadow-2); }
+.live-badge { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 999px; background: rgba(255,255,255,0.16); font-size: 12px; font-weight: 700; margin-bottom: 10px; }
+.impact-hero h1 { font-size: 24px; font-weight: 800; letter-spacing: -0.03em; }
+.hero-num { font-size: 38px; font-weight: 800; letter-spacing: -0.04em; margin-top: 14px; line-height: 1; }
+.tile-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.impact-tile { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding: 14px; border-radius: 18px; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-1); }
+.impact-tile b { font-size: 22px; font-weight: 800; letter-spacing: -0.03em; }
+.impact-tile span { font-size: 12px; color: var(--ink-3); font-weight: 600; }
+.reduce-card { padding: 14px; border-radius: 18px; background: var(--surface); border: 1px solid var(--line); }
+.bar { height: 9px; border-radius: 5px; background: var(--surface-2); overflow: hidden; }
+.bar > div { height: 100%; background: linear-gradient(90deg, var(--primary), #8b7bff); border-radius: 5px; }
+.cat-row { display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line); }
+.hall { display: flex; align-items: center; gap: 12px; padding: 14px; border-radius: 18px; background: var(--amber-soft); }
+.eco-tile { flex: 1; display: flex; flex-direction: column; gap: 4px; padding: 14px; border-radius: 18px; background: var(--green-soft); color: var(--green-text); }
+.eco-tile svg { width: 20px; height: 20px; }
+.eco-tile b { font-size: 20px; color: var(--ink); }
+.eco-tile span { font-size: 11.5px; font-weight: 600; }

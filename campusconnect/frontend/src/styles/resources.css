@@ -1,0 +1,134 @@
+.h-md {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.filter-btn {
+  position: relative;
+  flex: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: var(--surface);
+  border: 1.5px solid var(--line);
+  color: var(--ink-2);
+}
+.filter-btn svg {
+  width: 20px;
+  height: 20px;
+}
+.filter-btn.on {
+  background: var(--primary-soft);
+  border-color: var(--primary);
+  color: var(--primary-text);
+}
+.fdot {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--bg);
+  box-sizing: content-box;
+}
+.viewtoggle {
+  display: flex;
+  padding: 3px;
+  border-radius: 12px;
+  background: var(--surface-2);
+}
+.viewtoggle button {
+  width: 34px;
+  height: 30px;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  color: var(--ink-3);
+}
+.viewtoggle button svg {
+  width: 17px;
+  height: 17px;
+}
+.viewtoggle button[aria-pressed="true"] {
+  background: var(--surface);
+  color: var(--primary-text);
+  box-shadow: var(--shadow-1);
+}
+.ex-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-1);
+  overflow: hidden;
+}
+.ex-summary div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 6px;
+}
+.ex-summary div + div {
+  border-left: 1px solid var(--line);
+}
+.ex-summary b {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+.ex-summary span {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-3);
+}
+.wish-hero {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 20px;
+  background: var(--amber-soft);
+}
+.wcard {
+  padding: 14px;
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-1);
+}
+.wcard.hit {
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px var(--green-soft), var(--shadow-1);
+}
+.wmatch {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 11px 12px;
+  border-radius: 14px;
+  background: var(--green-soft);
+  color: var(--green-text);
+}
+.wmatch svg {
+  flex: none;
+  width: 20px;
+  height: 20px;
+}
+.wmatch b {
+  color: var(--ink);
+}
+.wmatch .small {
+  color: var(--ink-2);
+}

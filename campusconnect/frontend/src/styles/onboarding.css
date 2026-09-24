@@ -1,0 +1,319 @@
+.ob {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  overflow: hidden;
+}
+.ob.scroll-y {
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.ob-art {
+  position: relative;
+  flex: 1 1 52%;
+  min-height: 0;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, var(--primary-soft), var(--bg));
+  overflow: hidden;
+  animation: fade 0.4s both;
+}
+.ob-art.hero {
+  flex-basis: 58%;
+  display: block;
+}
+.ob-art.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+.ob-art.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 40%;
+  background: linear-gradient(to top, var(--bg), transparent);
+}
+.ob-circle {
+  width: min(64%, 260px);
+  aspect-ratio: 1;
+  animation: pop 0.5s var(--ease) both;
+  filter: drop-shadow(0 20px 30px rgba(38, 30, 130, 0.25));
+}
+.ob-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.ob-brand {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px 7px 10px;
+  border-radius: 999px;
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--primary-text);
+  font-size: 15px;
+}
+.ob-brand svg {
+  width: 20px;
+  height: 20px;
+}
+.ob-skip {
+  position: absolute;
+  top: 20px;
+  right: 18px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  font-weight: 700;
+  font-size: 13.5px;
+  color: var(--ink-2);
+}
+.ob-panel {
+  flex: none;
+  padding: 6px 24px calc(22px + var(--safe-b));
+  animation: story-text 0.45s var(--ease) both;
+}
+.ob-dots {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.ob-dots button {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--surface-3);
+  transition: width 0.3s var(--ease), background 0.2s;
+}
+.ob-dots button.on {
+  width: 26px;
+  background: var(--primary);
+}
+.ob-panel h1,
+.ob-form h1 {
+  font-size: 29px;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+}
+.ob-panel p {
+  margin-top: 10px;
+  color: var(--ink-2);
+  font-size: 15.5px;
+  line-height: 1.5;
+}
+.ob-points {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+  display: grid;
+  gap: 8px;
+}
+.ob-points li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  font-size: 14.5px;
+}
+.ob-points .icon-tile {
+  width: 34px;
+  height: 34px;
+  border-radius: 11px;
+}
+.ob-points .icon-tile svg {
+  width: 18px;
+  height: 18px;
+}
+.ob-top {
+  flex: none;
+  height: 168px;
+  background-size: cover;
+  background-position: 50% 40%;
+  position: relative;
+  padding: 14px;
+}
+.ob-top.small {
+  height: 120px;
+}
+.ob-top::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(20, 15, 80, 0.35), transparent 40%, var(--bg));
+}
+.ob-top .icon-btn {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(6px);
+}
+.ob-form {
+  flex: none;
+  padding: 0 24px calc(28px + var(--safe-b));
+  margin-top: -34px;
+  position: relative;
+  z-index: 2;
+  animation: story-text 0.45s var(--ease) both;
+}
+.ob-form h1 {
+  margin-top: 14px;
+}
+.ob-form > p {
+  margin-top: 8px;
+}
+.icon-tile.big {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  border: 4px solid var(--bg);
+}
+.icon-tile.big svg {
+  width: 28px;
+  height: 28px;
+}
+.input-icon {
+  position: relative;
+  display: block;
+}
+.input-icon > svg {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  color: var(--ink-3);
+  z-index: 1;
+}
+.otp {
+  display: flex;
+  gap: 10px;
+  margin: 22px 0 8px;
+  justify-content: space-between;
+}
+.otp-box {
+  width: 100%;
+  min-width: 0;
+  height: 60px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+  border-radius: 16px;
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+}
+.otp-box:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px var(--primary-soft);
+  transform: translateY(-2px);
+}
+.otp-box.fill {
+  border-color: var(--primary);
+}
+.otp-box.err {
+  border-color: var(--red);
+  animation: shake 0.35s;
+}
+@keyframes shake {
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+.demo-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--amber-soft);
+  color: var(--amber);
+  font-size: 13px;
+  font-weight: 600;
+}
+.demo-hint svg {
+  width: 16px;
+  height: 16px;
+  flex: none;
+}
+.demo-hint button {
+  margin-left: auto;
+  font-weight: 800;
+  text-decoration: underline;
+}
+.steps-mini {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+.steps-mini i {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--surface-3);
+}
+.steps-mini i.on {
+  background: var(--primary);
+}
+.ob.done {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px;
+  gap: 10px;
+  background: linear-gradient(160deg, #3a2fd1, #6b4ff0);
+  color: #fff;
+}
+.done-badge {
+  width: 112px;
+  height: 112px;
+  border-radius: 36px;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  color: var(--green);
+  animation: badge-pop 0.7s var(--ease) both;
+  margin-bottom: 12px;
+}
+.done-badge svg {
+  width: 56px;
+  height: 56px;
+}
+@keyframes badge-pop {
+  0% {
+    transform: scale(0.3) rotate(-20deg);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.12) rotate(4deg);
+    opacity: 1;
+  }
+  100% {
+    transform: none;
+  }
+}
+.ob.done h1 {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+.ob.done p {
+  opacity: 0.85;
+}

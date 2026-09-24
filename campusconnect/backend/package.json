@@ -1,0 +1,8 @@
+{
+  "name": "campusconnect-backend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Zero-dependency Node HTTP server implementing the CampusConnect REST contract used by frontend/src/lib/api.js. No 'npm install' needed to run it — see README.md for why, and for the drop-in path to real Express + MongoDB.",
+  "scripts": { "start": "node src/server.js", "dev": "node --watch src/server.js" }
+}

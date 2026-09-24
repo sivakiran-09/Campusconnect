@@ -1,0 +1,14 @@
+.s-title { font-size: 12.5px; font-weight: 800; color: var(--ink-3); text-transform: uppercase; letter-spacing: 0.04em; margin: 0 4px 8px; }
+.s-card { border-radius: 18px; background: var(--surface); border: 1px solid var(--line); overflow: hidden; }
+.s-row { display: flex; align-items: center; gap: 12px; width: 100%; padding: 13px 14px; font-size: 14.5px; }
+.s-row:disabled { opacity: 1; }
+.s-row + .s-row { border-top: 1px solid var(--line); }
+.s-row svg { width: 19px; height: 19px; flex: none; }
+.theme-row { display: flex; gap: 2px; padding: 10px; }
+.theme-opt { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 12px 4px; border-radius: 14px; color: var(--ink-3); font-size: 12.5px; font-weight: 700; }
+.theme-opt.on { background: var(--primary-soft); color: var(--primary-text); }
+.theme-opt svg { width: 20px; height: 20px; }
+.factor-row { padding: 12px 14px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line); }
+.wallet-hero { padding: 20px; border-radius: 24px; color: #fff; background: linear-gradient(150deg, #b45f06, #f2a93b); box-shadow: var(--shadow-2); }
+.ledger-row { display: flex; align-items: center; gap: 12px; padding: 12px 4px; }
+.ledger-row + .ledger-row { border-top: 1px solid var(--line); }
